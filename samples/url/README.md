@@ -1,15 +1,24 @@
+<p align="center">
+  <a href="https://aiso.ai/dev/createApp/urlApp/urlAppCreate/?type=url">
+    <img src="https://user-images.githubusercontent.com/38392519/161871044-f6d20d71-9559-407f-aa4a-1df3e175909a.png" />
+  </a>
+</p>
+
 # 아이소에 URL앱 샘플 디렉토리
 
 ## 💡 개요
 아이소에 등록이 가능하도록 작성한 서버 작성 가이드 및 샘플코드입니다.
 
 ## 제한사항
-1. request method.
+
+1. request method
     - 아이소에서 서버로 요청을 보낼때 POST로 요청을 보냅니다.
-2. request header.
+
+2. request header
     - 헤더는 URL앱 작성시 설정이 가능합니다.
     - 인증 및 데이터 적재를 위하여 설정이 가능합니다.
-3. request body.
+
+3. request body
     - 필수 데이터
         1. input_url
             - input_url은 List[str] 형태로 전달됩니다.
@@ -36,6 +45,7 @@
 
 5. 예제코드
     - 위의 설명을 바탕으로 작성한 예제 코드입니다.
+    - 하위 폴더 예제들의 의존성 목록은 [requirements.txt](https://github.com/enkinoOrg/aiso_samples/tree/main/samples/url/requirements.txt) 입니다.
     ```
     try:
         ## 메시지 파싱 ##
@@ -78,6 +88,3 @@
         error = traceback.format_exc()
         return Response(response=error, status=400)
     ```
-- [License](#-license)
-## 📝 License
-Licensed under the [MIT License](./LICENSE).
