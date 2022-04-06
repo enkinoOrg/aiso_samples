@@ -30,21 +30,22 @@
     ```
 
 3. 정적파일 업로드
-    - 설정파일, 모델 같은 정적파일을 앱 생성시 같이 업로드 가능합니다.
+    - 설정파일, 모델과 같은 정적파일을 앱 생성시 같이 업로드하여 앱 생성이 가능합니다.
     - 해당 정적파일들은 앱이 실행되는 위치에 같이 놓이게 됩니다.
 
 4. 제한사항
     - 이름 규칙
-        1. 도입 함수
+        * 도입 함수
             - 도입 함수의 이름은 항상 fun이여야 하며, 다른 함수로 덮어씌우거나, 해당 함수가 존재지 않을시 에러가 발생합니다.
-        2. 입력데이터
-            - 입력 데이터 변수의 이름은 항상 input_data입니다.
+        * 입력 데이터
+            - 입력 데이터 변수의 이름은 항상 input_data 입니다.
     - 출력 규칙
-        1. 출력의 개수는 앱 생성시 설정한 개수 만큼 반환되어야 합니다.
-        2. 출력데이터의 순서는 앱 생성시 설정한 순서대로 반환되어야 합니다.
-        3. image 데이터는 numpy.ndarray형태로, text 데이터는 string형태로 반환되어야 합니다.
+        * 출력의 개수는 앱 생성시 설정한 개수 만큼 반환되어야 합니다.
+        * 출력데이터의 순서는 앱 생성시 설정한 순서대로 반환되어야 합니다.
+        * image 데이터는 numpy.ndarray형태로, text 데이터는 string형태로 반환되어야 합니다.
     - 모듈 제한
-        1. 시스템, 파일 시스템등 실행시 실행환경을 변경하거나 파괴할 수 있는 모듈은 로드하지 못합니다.
+        * 실행시 실행환경을 변경이 가능한 모듈은 로드하지 못합니다.
+        * 아래의 모듈은 사용하지 못합니다.
             ```
             "os", "sys", "subprocess", "importlib", "posix", "pathlib",
             "shutil", "glob", "tempfile", "fileinput", "filecmp", "linecache", 
@@ -52,7 +53,7 @@
             ```
 
 4. 실행환경
-    1. Python Version: Python3.8
-    2. 메모리: 1GB
-    3. 실행시간 제한: 180초
-    3. 의존성: [requirements.txt](https://github.com/enkinoOrg/aiso_samples/tree/main/samples/code/requirements.txt)
+    * Python Version: Python3.8
+    * 메모리: 1GB
+    * 실행시간 제한: 180초
+    * 의존성: [requirements.txt](https://github.com/enkinoOrg/aiso_samples/tree/main/samples/code/requirements.txt)
