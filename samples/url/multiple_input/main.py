@@ -14,9 +14,6 @@ def task(images: List[np.ndarray]) -> np.ndarray:
     idx = random.randrange(len(images))
     return images[idx]
 
-def download_async(input_urls: List[str]) -> List[np.ndarray]:
-    pass
-
 def download_sync(input_urls: List[str]) -> List[np.ndarray]:
     input_images = list()
     for input_url in input_urls:
@@ -28,7 +25,7 @@ def download_sync(input_urls: List[str]) -> List[np.ndarray]:
 
 @app.route("/")
 def index():
-    # aiso에서 요청시 POST이외에는 요청을 보내지 아니함
+    # aiso에서는 POST요청이외에는 보내지 않음
     if(request.method != "POST"):
         return Response(response="Method Not Allowed", status=405)
 

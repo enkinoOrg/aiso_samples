@@ -13,7 +13,7 @@ def task(image: np.ndarray, xsize: int, ysize: int) -> np.ndarray:
 
 @app.route("/")
 def index():
-    # aiso에서 요청시 POST이외에는 요청을 보내지 아니함
+    # aiso에서는 POST요청이외에는 보내지 않음
     if(request.method != "POST"):
         return Response(response="Method Not Allowed", status=405)
 
@@ -34,7 +34,7 @@ def index():
     img_url = aiso_request["input_url"][0]
     header = aiso_request["header"][0]
     upload_url = aiso_request["upload_url"][0]
-    # parameter(optional)
+    # parameter(c)
     xsize = aiso_request["xsize"]
     ysize = aiso_request["ysize"]
 

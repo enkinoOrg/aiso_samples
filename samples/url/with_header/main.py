@@ -18,7 +18,7 @@ def auth(Authorization: str) -> bool:
 
 @app.route("/")
 def index():
-    # aiso에서 요청시 POST이외에는 요청을 보내지 아니함
+    # aiso에서는 POST요청이외에는 보내지 않음
     if(request.method != "POST"):
         return Response(response="Method Not Allowed", status=405)
 
