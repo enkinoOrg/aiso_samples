@@ -1,6 +1,5 @@
 import cv2
 import numpy as np
-from PIL import Image
 
 def fun(input_data, width=150, height=150):
     img_bytes = input_data[0]

@@ -8,7 +8,6 @@ def fun(input_data):
     na_values = ['?', '??', 'N/A', 'NA', 'nan', 'NaN', '-nan', '-NaN', 'null']
     df = pd.read_csv(csv_bytes, na_values=na_values)
     nums = df.select_dtypes(include=[np.number]).columns.tolist()
-    strs = df.select_dtypes(include=[np.object]).columns.tolist()
     for col in df:
         if(df[col].isnull().any()):
             if(col in nums):
