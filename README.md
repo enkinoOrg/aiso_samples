@@ -10,6 +10,7 @@
   <a href="https://github.com/enkinoOrg/aiso_samples/blob/main/LICENSE">
     <img src="https://img.shields.io/badge/license-MIT-blue.svg"/>
   </a>
+  <img src="https://img.shields.io/badge/aiso-beta-green" />
 </p>
 
 ## 💡 개요
