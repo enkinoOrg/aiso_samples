@@ -1,5 +1,5 @@
 # 샘플 앱 의존성
 Flask==2.0.3
-requests==2.7.1
+requests==2.27.1
 numpy==1.19.5
 opencv-python==4.5.3.56
