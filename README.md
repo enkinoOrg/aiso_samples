@@ -7,10 +7,10 @@
   아이소 앱 샘플 저장소
 </h2>
 <p align="center">
-  <a href="https://github.com/enkinoOrg/aiso_samples/blob/main/LICENSE">
+  <a href="https://github.com/enkinoOrg/aiso_samples/blob/main/LICENSE" target="_blank">
     <img src="https://img.shields.io/badge/license-MIT-blue.svg"/>
   </a>
-  <a href="https://aiso.ai">
+  <a href="https://aiso-beta.notion.site/aiso-beta/AISO-99698ff53eca4ad488eef8393dd3cab8" target="_blank">
     <img src="https://img.shields.io/badge/aiso-beta-green" />
   </a>
 </p>
