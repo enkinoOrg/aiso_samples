@@ -11,14 +11,14 @@
 
 ## ❗ 제한사항
 
-1. request method
+1. 요청 메서드
     - 아이소에서 서버로 요청을 보낼때 POST로 요청을 보냅니다.
 
-2. request header
+2. 요청 헤더
     - 헤더는 URL앱 작성시 설정이 가능합니다.
     - 인증 및 데이터 적재를 위하여 설정이 가능합니다.
 
-3. request body
+3. 요청 메시지
     - 필수 데이터
         * input_url
             - input_url은 List[str] 형태로 전달됩니다.
@@ -38,8 +38,8 @@
             - 데이터 타입은 int, float, string, bool 형식이 가능합니다.
             - 여러개의 파라미터를 가질 수 있습니다.
             - 전달되는 방식은 body값에 담겨져 전달되며 생성시 설정한 이름의 KEY값으로 전달됩니다.
-                * 예시: 파라미터 size를 설정시, { input_url: ..., header: ..., upload_url: ..., size: ...}
-4. reponse
+                * 예시: 파라미터 size를 설정시, { input_url: ..., header: ..., upload_url: ..., KEY: ...}
+4. 응답
     - 실행결과 자체를 반환받지 않으며, 상태코드(status code)을 바탕으로 실행결과를 판단합니다.
     - 상태코드가 200이 아닐경우 에러로 처리합니다.
 
