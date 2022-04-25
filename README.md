@@ -10,12 +10,14 @@
   <a href="https://github.com/enkinoOrg/aiso_samples/blob/main/LICENSE">
     <img src="https://img.shields.io/badge/license-MIT-blue.svg"/>
   </a>
-  <img src="https://img.shields.io/badge/aiso-beta-green" />
+  <a href="https://aiso.ai">
+    <img src="https://img.shields.io/badge/aiso-beta-green" />
+  </a>
 </p>
 
 ## 💡 개요
 아이소 앱 가이드 및 샘플코드 저장소
 
-- [License](#-license)
+<!-- - [License](#-license) -->
 ## 📝 License
 Licensed under the [MIT License](./LICENSE).
