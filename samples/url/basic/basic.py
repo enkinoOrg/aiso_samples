@@ -4,6 +4,7 @@ import io
 import numpy as np
 import requests
 import json
+import os
 
 app = Flask(__name__)
 
@@ -54,3 +55,7 @@ def index():
     # 결과 상태 보고
     # 상태 200번 이외에는 에러가 발생으로 간주
     return Response(response="ok", status=200)
+
+
+if(__name__ == "__main__"):
+    app.run(host=os.getenv("host"), port=os.getenv("port"), debug=False)
