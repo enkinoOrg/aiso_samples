@@ -2,8 +2,9 @@ from tensorflow.keras.applications.mobilenet_v2 import preprocess_input
 import numpy as np
 import cv2
 import matplotlib.pyplot as plt
-import os
 
+def work_dir():
+    return "/".join(__file__.split("/")[:-1])
 
 def anonymize_face_simple(image, factor=3.0):
     (h, w) = image.shape[:2]
@@ -20,7 +21,8 @@ def fun(input_data):
     input_data = np.asarray(bytearray(input_data[0].read()))
     img = cv2.imdecode(input_data,cv2.IMREAD_COLOR)
 
-    base_dir = os.path.dirname(os.path.abspath(__file__))
+    # 정적파일이 존재하는 경로를 지정
+    base_dir = work_dir()
     facenet = cv2.dnn.readNet(f"{base_dir}/deploy.prototxt", f"{base_dir}/res10_300x300_ssd_iter_140000.caffemodel")
     # 얼굴들의 좌표 배열 선언
     faces = list()
