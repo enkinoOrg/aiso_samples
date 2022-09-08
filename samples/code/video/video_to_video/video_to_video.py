@@ -18,7 +18,8 @@ def fun(input_data):
         ret, frame = cap.read()
         if(np.shape(frame) == ()):
             continue
-        resized_frame = cv2.resize(frame, (dst_width, dst_height), cv2.INTER_AREA)
+        gray_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+        resized_frame = cv2.resize(gray_frame, (dst_width, dst_height), cv2.INTER_AREA)
         frames.append(resized_frame)
 
     if(cap.isOpened()):
