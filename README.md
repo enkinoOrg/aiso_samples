@@ -4,7 +4,7 @@
   </a>
 </p>
 <h2 align="center">
-  아이소 앱 샘플 저장소
+  아이소 앱 코드 저장소
 </h2>
 <p align="center">
   <a href="https://github.com/enkinoOrg/aiso_samples/blob/main/LICENSE" target="_blank">
@@ -16,7 +16,7 @@
 </p>
 
 ## 💡 개요
-아이소 앱 가이드 및 샘플코드 저장소
+아이소 앱 가이드 및 코드 저장소
 
 <!-- - [License](#-license) -->
 ## 📝 License
